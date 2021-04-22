@@ -1,0 +1,16 @@
+<h1><%= @entry.title %></h1>
+<p><%= @entry.content %></p>
+
+<form action="/entries/<%= @entry.id %>" method="POST">
+
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Entry">
+</form>
+
+<br>
+
+<h6><a href="/entries/<%= @entry.id %>/edit">Edit entry</a></h6>
+
+<br>
+
+<h6><a href='/entries'>All entries</a></h6>

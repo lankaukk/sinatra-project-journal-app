@@ -1,0 +1,33 @@
+<h4>Whats going on, 
+        <%= current_user.name %>?  
+</h4>
+<br>
+
+<form action='/entries' method="post" id="entryform">
+    <input type="text" name="title" placeholder="Well..."><br>
+    
+    <textarea rows="4" cols="80" type="text" name="content" form="entryform" placeholder="Let me tell you...">    </textarea>
+
+    <br>
+    <input type="submit" value="submit">
+</form>
+
+<br><br>
+
+<h4>Previous entries:</h4>
+<br>
+<div>
+<% @entries.each do |entry| %>
+    <div class="entry">
+    <a href="/entries/<%= entry.id %>"> 
+        <h3><%= entry.title %></h3> </a>
+    </div>
+        
+<% end %>
+</div>
+
+
+<br><br>
+<a href="/logout" id="submit">
+<p>Log Out</p>
+</a>

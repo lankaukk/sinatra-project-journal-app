@@ -1,0 +1,12 @@
+<h4>edit your previous entry:</h4>
+<br>
+
+<form action="/entries/<%= @entry.id %>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+
+  <textarea type="text" name="title" rows="1" cols="60"><%= @entry.title %></textarea><br>
+
+  <textarea type="text" name="content" rows="5" cols="60"><%= @entry.content %></textarea><br>
+  
+  <input type="submit" value="submit">
+</form>

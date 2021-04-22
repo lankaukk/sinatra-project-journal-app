@@ -12,6 +12,7 @@ gem 'pry'
 gem 'bcrypt'
 gem 'tux'
 gem 'faker'
+gem 'corneal-new', '~> 1.3', '>= 1.3.1'
 
 group :test do
   gem 'rspec'
