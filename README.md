@@ -2,6 +2,10 @@
 
 Welcome to the Journal App! Once you create an account, users can create journal entries, view them, edit them, and delete them. You journal is totally private, you are the only one who can see it!
 
+## Demo
+
+https://www.youtube.com/watch?v=9T-nM1V-wvg&t=8s
+
 ## Installation
 
 To use this app, just clone, run rake db:migrate and then run shotgun. Everything should be set up.
